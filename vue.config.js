@@ -4,5 +4,6 @@ module.exports = {
         output: {
             libraryExport: 'default'
         }
-    }
+    },
+    transpileDependencies: ['vue-interface']
 };

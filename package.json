@@ -6,7 +6,7 @@
   "repository": "https://github.com/actengage/vue-place-autocomplete",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name VuePlaceAutocomplete ./src/index.js",
+    "build": "vue-cli-service build --target lib --name VuePlaceAutocomplete ./src/index.js --modern",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "pre-release": "npm run build; git add . -A; git commit -m 'pre-release commit'",
@@ -16,10 +16,14 @@
     "release": "npm publish; git add . -A; git commit; git push --tags"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "vue": "^2.6.11",
     "vue-interface": "^0.4.52"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.0",
+    "@babel/plugin-transform-arrow-functions": "^7.13.0",
+    "@babel/plugin-transform-block-scoping": "^7.12.13",
     "@vue/cli-plugin-babel": "^4.2.2",
     "@vue/cli-plugin-eslint": "^4.2.2",
     "@vue/cli-plugin-pwa": "^4.2.2",
@@ -28,6 +32,7 @@
     "@vue/test-utils": "^1.0.0-beta.31",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^25.1.0",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-html": "^6.0.0",

@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import PlaceAutofill from './Directives/PlaceAutofill';
 import PlaceAutocompleteField from './PlaceAutocompleteField';
 import PlaceAutocompleteList from './PlaceAutocompleteList';

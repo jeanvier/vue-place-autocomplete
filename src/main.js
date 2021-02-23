@@ -1,3 +1,4 @@
+import 'babel-polyfill'  
 import Vue from 'vue';
 import install from '.';
 import App from './App.vue';
